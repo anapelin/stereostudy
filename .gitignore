@@ -416,3 +416,39 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ===== STEREOSTUDY: Large data & binary files =====
+Datasets/
+output/
+
+# Model weights & training artifacts
+FineTuning/contrail_segmentation/
+FineTuning/checkpoints/
+FineTuning/dataset/
+FineTuning/wandb/
+*.safetensors
+
+# Binary data
+*.parquet
+*.zip
+*.npz
+*.jp2
+
+# Images (keep code, not outputs)
+*.png
+*.jpg
+*.jpeg
+
+# Spreadsheets / legacy artifacts
+*.ods
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# OS
+.DS_Store
