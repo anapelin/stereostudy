@@ -1,0 +1,21 @@
+IPSL Camera Calibration Maps
+==================================================
+
+Files:
+  - azimuth_visible.jp2: Azimuth angles
+  - zenith_visible.jp2: Zenith angles
+  - azimuth_zenith_visible_calibration.npz: Raw float data
+
+JP2 Encoding:
+  Format: uint16 (0-65535)
+
+  Azimuth conversion:
+    radians = (uint16_value / 65535) * 2π - π
+    range: [-π, π] radians or [-180°, 180°]
+
+  Zenith conversion:
+    radians = (uint16_value / 65535) * π/2
+    range: [0, π/2] radians or [0°, 90°]
+
+Image shape: (768, 1024)
+Camera: SIRTA IPSL (768x1024)

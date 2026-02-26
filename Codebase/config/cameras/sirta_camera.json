@@ -1,0 +1,40 @@
+{
+  "name": "SIRTA (IPSL)",
+  "site_code": "SIRTA_W",
+  "location": {
+    "latitude": 48.713,
+    "longitude": 2.208,
+    "elevation_m": 156,
+    "description": "SIRTA atmospheric research observatory, Palaiseau, France"
+  },
+  "image": {
+    "width": 1024,
+    "height": 768,
+    "format": "RGB",
+    "pixel_scale_um": null,
+    "sensor_size": null
+  },
+  "calibration": {
+    "model": "Fripon",
+    "params_file": "../../cheick_code/params.csv",
+    "azimuth_zenith_map": "../data/azimuth_zenith_map_full_corrected.npz",
+    "parameters": {
+      "b": [0.004453834292094883, 2.564235254518742e-09, 4.1447234720945385e-14, -4.546349745057689e-19, 5.455115354142721e-25],
+      "x0": 384.72316363925313,
+      "y0": 518.5298473242665,
+      "w": [-0.0428219173784752, 0.0060939237139654, 0.0034933983789092],
+      "K1": 0.000624032429956,
+      "phi": 0.2790851907390442
+    }
+  },
+  "projection": {
+    "type": "fisheye",
+    "fov_degrees": 180,
+    "distortion_model": "polynomial_9th_order"
+  },
+  "data": {
+    "dataset_id": "gQg5IUvV",
+    "raw_dir": "../../Datasets/gQg5IUvV",
+    "projected_dir": "../../Datasets/gQg5IUvV/PROJECTED"
+  }
+}

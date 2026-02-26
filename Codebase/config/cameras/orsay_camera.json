@@ -1,0 +1,40 @@
+{
+  "name": "Orsay (ECTL)",
+  "site_code": "Orsay",
+  "location": {
+    "latitude": 48.706433,
+    "longitude": 2.179331,
+    "elevation_m": 90,
+    "description": "École Centrale Paris, Orsay, France"
+  },
+  "image": {
+    "width": 1280,
+    "height": 960,
+    "format": "RGB",
+    "pixel_scale_um": null,
+    "sensor_size": null
+  },
+  "calibration": {
+    "model": "Fripon",
+    "params_file": "../../cheick_code/params.csv",
+    "azimuth_zenith_map": "../data/azimuth_zenith_map_Orsay.npz",
+    "parameters": {
+      "b": [0.3390824468057503, -0.0158329802718186, 0.0042674877046497, -0.0032828755953302, 0.0004442546529924],
+      "x0": 610.333,
+      "y0": 483.068,
+      "w": [2.47644, 2.8977, 1.89335],
+      "K1": 0.0018053,
+      "phi": 5.03026
+    }
+  },
+  "projection": {
+    "type": "fisheye",
+    "fov_degrees": 180,
+    "distortion_model": "polynomial_9th_order"
+  },
+  "data": {
+    "dataset_id": "OdnkTZQ8",
+    "raw_dir": "../../Datasets/OdnkTZQ8",
+    "projected_dir": "../../Datasets/OdnkTZQ8/PROJECTED"
+  }
+}

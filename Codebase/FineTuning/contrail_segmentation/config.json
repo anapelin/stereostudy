@@ -1,0 +1,119 @@
+{
+  "activation_function": "relu",
+  "architectures": [
+    "Mask2FormerForUniversalSegmentation"
+  ],
+  "backbone": null,
+  "backbone_config": {
+    "attention_probs_dropout_prob": 0.0,
+    "depths": [
+      2,
+      2,
+      18,
+      2
+    ],
+    "drop_path_rate": 0.3,
+    "dtype": "float32",
+    "embed_dim": 128,
+    "encoder_stride": 32,
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.0,
+    "hidden_size": 1024,
+    "image_size": 224,
+    "initializer_range": 0.02,
+    "layer_norm_eps": 1e-05,
+    "mlp_ratio": 4.0,
+    "model_type": "swin",
+    "num_channels": 3,
+    "num_heads": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "num_layers": 4,
+    "out_features": [
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4"
+    ],
+    "out_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "patch_size": 4,
+    "path_norm": true,
+    "qkv_bias": true,
+    "stage_names": [
+      "stem",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4"
+    ],
+    "use_absolute_embeddings": false,
+    "window_size": 12
+  },
+  "backbone_kwargs": null,
+  "class_weight": 2.0,
+  "common_stride": 4,
+  "decoder_layers": 10,
+  "dice_weight": 5.0,
+  "dim_feedforward": 2048,
+  "dropout": 0.0,
+  "dtype": "float32",
+  "encoder_feedforward_dim": 1024,
+  "encoder_layers": 6,
+  "enforce_input_proj": false,
+  "enforce_input_projection": false,
+  "feature_size": 256,
+  "feature_strides": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "hidden_dim": 256,
+  "id2label": {
+    "0": "contrail",
+    "1": "contrail maybe",
+    "2": "contrail old",
+    "3": "contrail veryold",
+    "4": "contrail young",
+    "5": "parasite",
+    "6": "sun",
+    "7": "unknow"
+  },
+  "ignore_value": 255,
+  "importance_sample_ratio": 0.75,
+  "init_std": 0.02,
+  "init_xavier_std": 1.0,
+  "label2id": {
+    "contrail": 0,
+    "contrail maybe": 1,
+    "contrail old": 2,
+    "contrail veryold": 3,
+    "contrail young": 4,
+    "parasite": 5,
+    "sun": 6,
+    "unknow": 7
+  },
+  "mask_feature_size": 256,
+  "mask_weight": 5.0,
+  "model_type": "mask2former",
+  "no_object_weight": 0.1,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 10,
+  "num_queries": 100,
+  "output_auxiliary_logits": null,
+  "oversample_ratio": 3.0,
+  "pre_norm": false,
+  "train_num_points": 12544,
+  "transformers_version": "4.56.2",
+  "use_auxiliary_loss": true,
+  "use_pretrained_backbone": false,
+  "use_timm_backbone": false
+}
