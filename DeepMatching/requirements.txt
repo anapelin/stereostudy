@@ -1,0 +1,58 @@
+# Stereo Matchers - Requirements
+# Core dependencies for stereo feature matching
+
+# PyTorch (install with CUDA support for GPU acceleration)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Basic scientific computing
+numpy>=1.21.0
+scipy>=1.7.0
+pillow>=9.0.0
+opencv-python>=4.5.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# Data handling
+pandas>=1.3.0
+
+# ===== Model-specific dependencies =====
+
+# LoFTR (via Kornia - easiest to install)
+kornia>=0.7.0
+kornia-moons>=0.2.0
+
+# RoMa
+# pip install romatch
+# or clone from: https://github.com/Parskatt/RoMa
+romatch>=0.0.1
+
+# DKM
+# Clone from: https://github.com/Parskatt/DKM
+# pip install -e . (from the DKM directory)
+# dkm  # uncomment if available on pip
+
+# ===== Optional dependencies =====
+
+# LightGlue (alternative matcher implementations)
+# Clone from: https://github.com/cvg/LightGlue
+# pip install -e .
+
+# Hugging Face transformers (for some model loading)
+transformers>=4.25.0
+
+# Progress bars
+tqdm>=4.60.0
+
+# Einops (used by many vision transformers)
+einops>=0.6.0
+
+# For MASt3R/DUSt3R (if using)
+# huggingface_hub>=0.20.0
+# accelerate>=0.25.0
+
+# Development tools (optional)
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=4.0.0
