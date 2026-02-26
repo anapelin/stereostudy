@@ -3,7 +3,7 @@
 > **Stereo Cloud Height Estimation and Contrail Detection**  
 > EUROCONTROL / IPSL Collaborative Research Project
 
-Automated altitude estimation of clouds and aircraft contrails using stereoscopic computer vision with two ground-based all-sky cameras separated by ~15 km in the Île-de-France region, south of Paris.
+Automated altitude estimation of clouds and aircraft contrails using stereoscopic computer vision with two ground-based all-sky cameras separated by ~16 km in the Île-de-France region, south of Paris.
 
 ---
 
