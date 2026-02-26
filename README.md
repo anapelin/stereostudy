@@ -565,8 +565,7 @@ python Flights/project_flights_to_cameras.py \
 
 **Format:** CSV (Fripon parameters), NPZ (azimuth/zenith maps), JP2 (calibration maps)
 - SIRTA: 6-parameter Fripon model
-- ECTL: JP2 calibration maps + Fripon fallback
-
+- ECTL: JP2 calibration maps 
 ---
 
 ## 🤝 Contributing
