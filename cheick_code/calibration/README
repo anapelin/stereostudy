@@ -1,0 +1,72 @@
+English :
+
+Notice :
+use : useCalibration.py
+
+if you want to use function process call worldToImage.
+if you want to use object process call useCalibration.
+
+There are no big difference. 
+You need to have parameters in a csv file in climavion folder.
+
+the différence is the function process determine the model with size of parameters.
+the process model you need to tell which model you want. 
+
+
+Description :
+
+Module calibration has differents files. 
+2 ways  one with only function second with object model.
+
+The 2 ways have 4 files.
+
+baseCalibreation :
+	16 functions
+	basic function which you need with all model. (conversion normalisation read)
+	1 objects définition.
+
+
+
+useCalibration : 
+	3 functions
+	Function to use calibration model with function.
+
+	Function to use calibration model with object.
+
+	affichage des erreurs.
+
+
+Function files :
+
+calibrationFripon : 
+	19 functions
+	Function specific to fripon model. (model, cost function, normalisation, save)
+
+calibrationM1 : 
+	39 functions
+	Function specific with the first model find. Sky camera geometric calibration using solar observations
+	(model, function, cost function, normalisation, save)
+	Documentation function not finish. (some function is unuse)
+
+Object files:
+
+OriginalModel :
+	File contain OrigineMdodel, object with all method and attribue to use this model.
+
+FriponModel :
+	File contain FriponModel, object with all method and attribue to use this model.
+
+
+If you want to make optimisation to find betters parameters use :
+
+optimize_calibration.py  to use function process
+
+optimize_calibration_withObject.py yo use model process
+
+these files use dataset in /homedata/ngourgue/Images/2019 2019contrails_mix.csv, 2019sun_zoonFull.csv, 2019sun_zoonMean.csv (2019contrails_old.csv, 2019contrails_new, 2019sun.csv).
+
+2019contrails_mix.csv is the concatenation with 2019contrails_new.csv and 2019contrails_old.csv. These are the with plane position and contrail line equation.
+2019sun_zoonFull.csv : sun posiiton and annotation with zooniverse.
+2019sun_zoonMean.csv : sun position and annotation with zooniverse meaning by image.
+2019sun.csv : sun position and annotation with automatic algorithm.
+
